@@ -7,7 +7,7 @@ namespace CalculadoraAPP
    public class Calculadora
     {
        
-        public void Somar()
+        public void Somar(double valor01, double valor02, string op, double resultado)
         {
             
         }

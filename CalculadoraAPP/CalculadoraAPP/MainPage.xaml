@@ -6,11 +6,12 @@
 
     <StackLayout>
         <!-- Este é o código XAML que dá forma ao layout do App -->
-        <Label Text="Calcullum" 
+        <Label Text="CALCULLUM" 
            HorizontalOptions="Center"
-            />
+           Margin="10" />
         <Entry x:Name="entryValor"
-               Keyboard="Numeric"></Entry>
+               Keyboard="Numeric"
+               Margin="20"></Entry>
         <StackLayout Orientation="Horizontal"
                      >
             <Button
@@ -18,8 +19,7 @@
                 Text="7"
                 FontSize="Large"
                 Clicked="Button7_Clicked"
-                FontAttributes="Bold"
-                                
+                FontAttributes="Bold"                
                 ></Button>
             <Button
                 x:Name="button8"
