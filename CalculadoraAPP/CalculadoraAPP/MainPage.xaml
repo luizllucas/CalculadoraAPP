@@ -10,10 +10,8 @@
            HorizontalOptions="Center"
            Margin="10" 
            FontSize="20"
-           FontAttributes="Bold"
-             /> 
+           FontAttributes="Bold"/> 
         <Entry x:Name="entryValor"
-               Text="0"
                Keyboard="Numeric"
                Margin="20"
                FontSize="20"></Entry>
