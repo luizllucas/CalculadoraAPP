@@ -5,20 +5,21 @@
              x:Class="CalculadoraAPP.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Calculadora" 
+        <!-- Este é o código XAML que dá forma ao layout do App -->
+        <Label Text="Calcullum" 
            HorizontalOptions="Center"
             />
         <Entry x:Name="entryValor"
                Keyboard="Numeric"></Entry>
         <StackLayout Orientation="Horizontal"
-                     HorizontalOptions="CenterAndExpand">
+                     >
             <Button
                 x:Name="button7"
                 Text="7"
                 FontSize="Large"
                 Clicked="Button7_Clicked"
                 FontAttributes="Bold"
+                                
                 ></Button>
             <Button
                 x:Name="button8"
