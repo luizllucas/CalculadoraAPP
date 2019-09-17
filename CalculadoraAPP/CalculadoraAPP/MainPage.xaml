@@ -8,33 +8,36 @@
         <!-- Este é o código XAML que dá forma ao layout do App -->
         <Label Text="CALCULLUM" 
            HorizontalOptions="Center"
-           Margin="10" />
+           Margin="10" 
+           FontSize="20"
+           FontAttributes="Bold"
+             /> 
         <Entry x:Name="entryValor"
+               Text="0"
                Keyboard="Numeric"
-               Margin="20"></Entry>
-        <StackLayout Orientation="Horizontal"
-                     >
+               Margin="20"
+               FontSize="20"></Entry>
+        <StackLayout Orientation="Horizontal">
             <Button
                 x:Name="button7"
                 Text="7"
-                FontSize="Large"
+                FontSize="20"
                 Clicked="Button7_Clicked"
-                FontAttributes="Bold"                
                 ></Button>
             <Button
                 x:Name="button8"
                 Text="8"
-                FontSize="Large"
+                FontSize="20"
                 Clicked="Button8_Clicked"></Button>
             <Button
                 x:Name="button9"
                 Text="9"
-                FontSize="Large"
+                FontSize="20"
                 Clicked="Button9_Clicked"></Button>
             <Button
                 x:Name="buttonSoma"
                 Text="+"
-                FontSize="Large"
+                FontSize="20"
                 Clicked="ButtonSoma_Clicked"
                 FontAttributes="Bold"></Button>
         </StackLayout>
@@ -43,22 +46,22 @@
             <Button
                 x:Name="button6"
                 Text="6"
-                FontSize="Large"
+                FontSize="20"
                 Clicked="Button6_Clicked"></Button>
             <Button
                 x:Name="button5"
                 Text="5"
-                FontSize="Large"
+                FontSize="20"
                 Clicked="Button5_Clicked"></Button>
             <Button
                 x:Name="button4"
                 Text="4"
-                FontSize="Large"
+                FontSize="20"
                 Clicked="Button4_Clicked"></Button>
             <Button
                 x:Name="buttonMultiplicar"
                 Text="*"
-                FontSize="Large"
+                FontSize="20"
                 Clicked="ButtonMultiplicar_Clicked"
                 FontAttributes="Bold"></Button>
         </StackLayout>
@@ -67,22 +70,22 @@
             <Button
                 x:Name="button3"
                 Text="3"
-                FontSize="Large"
+                FontSize="20"
                 Clicked="Button3_Clicked"></Button>
             <Button
                 x:Name="button2"
                 Text="2"
-                FontSize="Large"
+                FontSize="20"
                 Clicked="Button2_Clicked"></Button>
             <Button
                 x:Name="button1"
                 Text="1"
-                FontSize="Large"
+                FontSize="20"
                 Clicked="Button1_Clicked"></Button>
             <Button
                 x:Name="buttonSubtrair"
                 Text="-"
-                FontSize="Large"
+                FontSize="20"
                 Clicked="ButtonSubtrair_Clicked"
                 FontAttributes="Bold"></Button>
         </StackLayout>
@@ -91,24 +94,24 @@
             <Button
                 x:Name="button0"
                 Text="0"
-                FontSize="Large"
+                FontSize="20"
                 Clicked="Button0_Clicked"></Button>
             <Button
                 x:Name="buttonCE"
                 Text="CE"
-                FontSize="Large"
+                FontSize="20"
                 Clicked="ButtonCE_Clicked"
                 FontAttributes="Bold"></Button>
             <Button
                 x:Name="buttonResultado"
                 Text="="
-                FontSize="Large"
+                FontSize="20"
                 Clicked="ButtonResultado_Clicked"
                 FontAttributes="Bold"></Button>
             <Button
                 x:Name="buttonDividir"
                 Text="/"
-                FontSize="Large"
+                FontSize="20"
                 Clicked="ButtonDividir_Clicked"
                 FontAttributes="Bold"></Button>
         </StackLayout>

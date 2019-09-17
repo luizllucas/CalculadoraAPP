@@ -37,7 +37,7 @@ namespace CalculadoraAPP
 
         private void ButtonSoma_Clicked(object sender, EventArgs e)
         {
-            entryValor.Text += "+";
+            entryValor.Text += "";
         }
 
         private void Button6_Clicked(object sender, EventArgs e)
@@ -57,7 +57,7 @@ namespace CalculadoraAPP
 
         private void ButtonMultiplicar_Clicked(object sender, EventArgs e)
         {
-            entryValor.Text += "*";
+            entryValor.Text += "";
         }
 
         private void Button3_Clicked(object sender, EventArgs e)
@@ -77,7 +77,7 @@ namespace CalculadoraAPP
 
         private void ButtonSubtrair_Clicked(object sender, EventArgs e)
         {
-            entryValor.Text += "-";
+            entryValor.Text += ;
         }
 
         private void Button0_Clicked(object sender, EventArgs e)
@@ -87,7 +87,7 @@ namespace CalculadoraAPP
 
         private void ButtonCE_Clicked(object sender, EventArgs e)
         {
-            entryValor.Text += "";
+            entryValor.Text = "0";
         }
 
         private void ButtonResultado_Clicked(object sender, EventArgs e)
@@ -97,7 +97,7 @@ namespace CalculadoraAPP
 
         private void ButtonDividir_Clicked(object sender, EventArgs e)
         {
-            entryValor.Text += "/";
+            entryValor.Text += ;
         }
     }
 }
