@@ -98,6 +98,9 @@ namespace CalculadoraAPP
         private void ButtonCE_Clicked(object sender, EventArgs e)
         {
             entryValor.Text = "";
+            this.valor01 = 0;
+            this.valor02 = 0;
+            this.op = "";
         }
 
         private void ButtonResultado_Clicked(object sender, EventArgs e)

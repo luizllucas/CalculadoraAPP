@@ -14,17 +14,14 @@
         <Entry x:Name="entryValor"
                Keyboard="Numeric"
                Margin="70"
-               FontSize="20"
-               />
+               FontSize="20"/>
         <StackLayout Orientation="Horizontal"
                      >
             <Button
                 x:Name="button7"
                 Text="7"
                 FontSize="20"
-                Clicked="Button7_Clicked"
-                
-                ></Button>
+                Clicked="Button7_Clicked"></Button>
             <Button
                 x:Name="button8"
                 Text="8"
