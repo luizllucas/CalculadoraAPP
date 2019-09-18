@@ -8,19 +8,22 @@
         <!-- Este é o código XAML que dá forma ao layout do App -->
         <Label Text="CALCULLUM" 
            HorizontalOptions="Center"
-           Margin="10" 
+           Margin="50" 
            FontSize="20"
-           FontAttributes="Bold"/> 
+           FontAttributes="Bold"/>
         <Entry x:Name="entryValor"
                Keyboard="Numeric"
-               Margin="20"
-               FontSize="20"></Entry>
-        <StackLayout Orientation="Horizontal">
+               Margin="70"
+               FontSize="20"
+               />
+        <StackLayout Orientation="Horizontal"
+                     >
             <Button
                 x:Name="button7"
                 Text="7"
                 FontSize="20"
                 Clicked="Button7_Clicked"
+                
                 ></Button>
             <Button
                 x:Name="button8"
@@ -37,7 +40,8 @@
                 Text="+"
                 FontSize="20"
                 Clicked="ButtonSoma_Clicked"
-                FontAttributes="Bold"></Button>
+                FontAttributes="Bold"
+                ></Button>
         </StackLayout>
         <StackLayout Orientation="Horizontal"
                      HorizontalOptions="CenterAndExpand">

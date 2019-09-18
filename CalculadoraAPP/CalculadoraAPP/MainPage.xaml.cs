@@ -10,10 +10,10 @@ namespace CalculadoraAPP
     
     public partial class MainPage : ContentPage
     {
-        public static double valor01;
-        public static double valor02;
-        public static string op;
-        public static double resultado;
+        private double valor01;
+        private double valor02;
+        private string op;
+        private double resultado;
 
         public MainPage()
         {           
@@ -37,9 +37,11 @@ namespace CalculadoraAPP
 
         private void ButtonSoma_Clicked(object sender, EventArgs e)
         {
-            valor01 = Convert.ToDouble(entryValor.Text);
+            //this para dizer que a variável Valor faz parte da MainPage
+            this.valor01 = Convert.ToDouble(entryValor.Text);
             entryValor.Text = "";
-            op = "+";
+            this.op = "SOMAR";
+            
         }
 
         private void Button6_Clicked(object sender, EventArgs e)
@@ -59,7 +61,11 @@ namespace CalculadoraAPP
 
         private void ButtonMultiplicar_Clicked(object sender, EventArgs e)
         {
-            entryValor.Text += "";
+
+            //this para dizer que a variável Valor faz parte da MainPage
+            this.valor01 = Convert.ToDouble(entryValor.Text);
+            entryValor.Text = "";
+            this.op = "MULTIPLICAR";
         }
 
         private void Button3_Clicked(object sender, EventArgs e)
@@ -79,7 +85,9 @@ namespace CalculadoraAPP
 
         private void ButtonSubtrair_Clicked(object sender, EventArgs e)
         {
-            entryValor.Text += "";
+            this.valor01 = Convert.ToDouble(entryValor.Text);
+            entryValor.Text = "";
+            this.op = "SUBTRAIR";
         }
 
         private void Button0_Clicked(object sender, EventArgs e)
@@ -94,21 +102,39 @@ namespace CalculadoraAPP
 
         private void ButtonResultado_Clicked(object sender, EventArgs e)
         {
-            valor02 = Convert.ToDouble(entryValor.Text);
-            switch (op)
+            Calculadora calc = new Calculadora();
+            this.valor02 = Convert.ToDouble(entryValor.Text);
+
+            switch (this.op)
             {
-                case "+":
-                    resultado = valor01 + valor02;
-                    entryValor.Text = Convert.ToString(resultado);
+                case "SOMAR":       
+                    entryValor.Text = calc.Somar(this.valor01, this.valor02).ToString();
                     break;
 
+                case "SUBTRAÇÃO":
+                    entryValor.Text = calc.Subtrair(this.valor01, this.valor02).ToString();
+                    break;
+
+                case "DIVIDIR":
+                    entryValor.Text = calc.Dividir(this.valor01, this.valor02).ToString();
+                    break;
+
+                case "MULTIPLICAR":
+                    entryValor.Text = calc.Multiplicar(this.valor01, this.valor02).ToString();
+                    break;
+
+                default:
+                    DisplayAlert("Ops...", "A Calcullum falhou!\n Tente novamente :)", "Beleza!");
+                    break;
             }
           
         }
 
         private void ButtonDividir_Clicked(object sender, EventArgs e)
         {
-            entryValor.Text += "";
+            this.valor01 = Convert.ToDouble(entryValor.Text);
+            entryValor.Text = "";
+            this.op = "DIVIDIR";
         }
     }
 }

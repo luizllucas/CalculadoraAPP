@@ -6,19 +6,26 @@ namespace CalculadoraAPP
 {
    public class Calculadora
     {
-        public double valor01;
-        public double valor02;
-        public string op;
-        public double resultado;
-        public void Somar()
+       
+        public double Somar(double valor01, double valor02)
         {
-            
+            return valor01 + valor02;
         }
 
-        public void Calcular()
+        public double Subtrair(double valor01, double valor02)
         {
-           
-            resultado.ToString();
+            return valor01 - valor02;
+        }
+
+        public double Dividir(double valor01, double valor02)
+        {
+            return valor01 / valor02;
+        }
+
+        public double Multiplicar(double valor01, double valor02)
+        {
+            return valor01 * valor02;
         }
     }
+
 }
